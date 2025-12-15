@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/day02-基础语法/day02-基础语法.iml" filepath="$PROJECT_DIR$/day02-基础语法/day02-基础语法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day05-面向对象编程/day05-面向对象编程2.iml" filepath="$PROJECT_DIR$/day05-面向对象编程/day05-面向对象编程2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaseaiproject.iml" filepath="$PROJECT_DIR$/javaseaiproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day05-面向对象编程/代码/代码.iml" filepath="$PROJECT_DIR$/day05-面向对象编程/代码/代码.iml" />
+    </modules>
+  </component>
+</project>
