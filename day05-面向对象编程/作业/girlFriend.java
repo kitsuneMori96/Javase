@@ -13,7 +13,7 @@ class Test {
         t1.setWorkId(001);
         Teacher t2=new Teacher("李老师",002);
         t1.show();
-
+        t2.show();
     }
 }
 
@@ -47,8 +47,8 @@ class Student{
 class Teacher{
     private String name;
     private int workId;
-    public void teach(){
-        System.out.println("工号为"+workId+ "的老师" + name + "正在讲课");
+    public void show(){
+        System.out.println("工号为"+ workId + "的老师" + name + "正在讲课");
     }
 
     public Teacher(){
