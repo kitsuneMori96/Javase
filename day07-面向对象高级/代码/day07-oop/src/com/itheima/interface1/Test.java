@@ -10,7 +10,10 @@ public class Test {
         c.run();
         System.out.println(c.go());
         c.play();
+
     }
+
+
 }
 
 // C被称为实现类。同时实现了多个接口。
@@ -31,4 +34,11 @@ class C implements  B , A{
     public void play() {
         System.out.println("C类重写了play方法");
     }
+
+    @Override
+    public void show() {
+        System.out.println("展示方法的借口重写");
+    }
+
+
 }

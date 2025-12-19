@@ -1,4 +1,4 @@
-package com.itheima.interface3;
+package com.itheima.interface6;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 public class Student {
     private String name;
     private char sex;
-    private double score;
+    private int score;
 }
