@@ -13,8 +13,13 @@ public class Test {
         allStudents[7] = new Student("郑十", '女', 93);
         allStudents[8] = new Student("赵敏", '女', 100);
         allStudents[9] = new Student("周芷若", '女', 90);
-        ClassDataInter inter = new Impl2(allStudents);
-        inter.printAllStudentInfos();
-        inter.printAverageScore();
+        ClassDataInter inter1 = new Impl2(allStudents);
+        ClassDataInter inter2 = new Impl2(allStudents);
+        inter1.printAllStudentInfos();
+        inter1.printAverageScore();
+        System.out.println("----------------");
+        inter2.printAllStudentInfos();
+        inter2.printAverageScore();
+
     }
 }
