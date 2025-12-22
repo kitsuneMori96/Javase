@@ -1,6 +1,8 @@
 package com.itheima.gui;
 
 import javax.swing.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class JFrameDemo1 {
     public static void main(String[] args) {
@@ -17,7 +19,39 @@ public class JFrameDemo1 {
 
         JButton jb = new JButton("登录"); // 创建一个按钮
         panel.add(jb); // 将按钮添加到面板中
+        //弹出登录消息
+        jb.addActionListener(e -> JOptionPane.showMessageDialog(jf, "登录成功！"));
 
+        // 2、添加键盘监听器
+        jf.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode() == KeyEvent.VK_UP){
+                    System.out.println("按下了上键");
+                }
+                else if(e.getKeyCode() == KeyEvent.VK_DOWN){
+                    System.out.println("按下了下键");
+                }
+                else if(e.getKeyCode() == KeyEvent.VK_LEFT){
+                    System.out.println("按下了左键");
+                }
+                else if(e.getKeyCode() == KeyEvent.VK_RIGHT){
+                    System.out.println("按下了右键");
+                }
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+        });
         jf.setVisible(true); // 显示窗口
+        //设置jf为焦点
+        jf.requestFocus();
     }
 }
