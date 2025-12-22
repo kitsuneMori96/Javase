@@ -27,10 +27,9 @@ public class LambdaDemo1 {
         }; */
 
         // Lambda只能简化函数式接口的匿名内部类。
-        Swim s1 = () -> {
-            System.out.println("学生🏊‍贼快~~~~");
-        };
-        s1.swimming();
+        Swim s1 = () -> System.out.println("学生🏊‍贼快~~~~");
+
+
     }
 }
 

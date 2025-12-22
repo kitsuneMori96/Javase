@@ -38,17 +38,17 @@ public class StringDemo1 {
         System.out.println("========================================");
         // 调用字符串的方法，处理字符串数据。
         // 简易版的登录：
-        String okLoginName = "admin";
-
-        System.out.println("请您输入您的登录名称：");
+        System.out.println("请输入用户名：");
         Scanner sc = new Scanner(System.in);
-        String loginName = sc.next();
-
+        String username = sc.next();
+        System.out.println("请输入密码：");
+        String password = sc.next();
         // 字符串对象的内容比较，千万不要用==,==默认比较地址，字符串对象的内容一样时地址不一定一样
         // 判断你字符串内容，建议大家用 String提供的equals方法，只关心内容一样，就返回true,不关心地址。
-        if(okLoginName.equals(loginName)){
-            System.out.println("恭喜您，登录成功！");
-        }else{
+        if(username.equals("admin") && password.equals("123456")){
+            System.out.println("登录成功！");
+        }
+        else {
             System.out.println("登录失败！");
         }
 

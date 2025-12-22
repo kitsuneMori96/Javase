@@ -15,13 +15,8 @@ public class Student {
     private char sex;
 
     // 静态方法
-    public static int compareByAge(Student o1, Student o2) {
-        return o1.getAge() - o2.getAge();
-    }
+    public static int CompareByAge(Student s1, Student s2) {return s1.getAge() - s2.getAge();}
 
     // 实例方法
-    public int compareByHeight(Student o1, Student o2) {
-        // 按照身高比较
-        return Double.compare(o1.getHeight(), o2.getHeight());
-    }
+    public int CompareByHeight(Student o1, Student o2){ return Double.compare(o1.getHeight(), o2.getHeight());}
 }

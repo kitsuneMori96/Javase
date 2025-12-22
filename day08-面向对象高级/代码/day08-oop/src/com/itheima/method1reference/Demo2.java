@@ -23,7 +23,7 @@ public class Demo2 {
 
         // 实例方法引用：对象名::实例方法
         // 前提：-> 前后参数的形式一致，才可以使用实例方法引用
-        Arrays.sort(students, t::compareByHeight);
+        Arrays.sort(students, t::CompareByHeight);
 
         // 遍历数组中的学生对象并输出
         for (int i = 0; i < students.length; i++) {

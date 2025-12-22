@@ -3,7 +3,7 @@ package com.itheima.method1reference;
 import java.util.Arrays;
 
 public class Demo1 {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // 目标：静态方法引用：演示一个场景。
         test();
     }
@@ -24,11 +24,12 @@ public class Demo1 {
 
         // 静态方法引用： 类名:: 静态方法
         // 前提：-> 前后参数的形式一致，才可以使用实例方法引用
-        Arrays.sort(students, Student::compareByAge);
+        Arrays.sort(students,Student::CompareByAge);
+        Student o = new Student();
+        Arrays.sort(students, o::CompareByHeight);
 
         // 遍历数组中的学生对象并输出
-        for (int i = 0; i < students.length; i++) {
-            Student s = students[i];
+        for (Student s : students) {
             System.out.println(s);
         }
     }
