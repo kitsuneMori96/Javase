@@ -78,7 +78,6 @@ public class MainFrame extends JFrame {
                             int temp=data[i][j];
                             data[i][j]=data[i+1][j];
                             data[i+1][j]=temp;
-                            System.out.println("上移成功");
                             return;
                         }
                     }
@@ -171,6 +170,9 @@ public class MainFrame extends JFrame {
         });
     }
     public void initPanel() {
+
+        getContentPane().removeAll(); // 移除所有组件
+
         // 初始化界面图片(先添加前景图片)
         setLayout(null);
         for (int i = 0; i < data.length; i++) {
@@ -185,6 +187,10 @@ public class MainFrame extends JFrame {
         JLabel label = new JLabel(new ImageIcon(IMAGE_PATH + "background.png"));
         add(label);
         label.setBounds(0, 0, 450, 484);
+
+        revalidate(); // 重新计算布局
+        repaint();    // 重绘界面
+
     }
 
 }
